@@ -10,6 +10,7 @@ The problem that we focus on is the case of *q=1* outlined in BCM17. This specia
 ```
 minimize	nuclear_norm( S - ( T + P ) )
 subject to 	P, T >= 0
+		S - P >= 0
 		P diagonal
 		rank(T) <= r
 ```
