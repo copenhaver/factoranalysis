@@ -6,20 +6,20 @@ Factor analyis ("FA") is a classical technique in multivariate statistics enjoyi
 
 This page contains several sample implementations of an estimation procedure for FA as described in Bertsimas, Copenhaver, and Mazumder, "Certifiably Optimal Low Rank Factor Analysis", Journal of Machine Learning Research 18 (2017) ("BCM17"). The approach is based on conditional gradient methods from convex optimization. We provide several sample implementations of Algorithm 1 (see page 13). Given the well-structured nature of the problems solved in Algorithm 1, there are algorithmic improvements that can be made to the implementations here, but these serve as a good starting point.
 
-The problem that we focus on is the case of *q=1* outlined in BCM17. This special case is known as *Approximate Minimum Rank Factor Analysis* (or MRFA), and takes the form
+The problem that we focus on is the case of *q=1* outlined in BCM17. This special case is known as *Approximate Minimum Rank Factor Analysis*, or MRFA, and takes the form
 ```
-minimize		nuclear_norm( S - ( T + P ) )
-subject to 		P, T >= 0
-				P diagonal
-				rank(T) <= r
+minimize	nuclear_norm( S - ( T + P ) )
+subject to 	P, T >= 0
+		P diagonal
+		rank(T) <= r
 ```
 Here the optimization variables are `T` and `P`; the notation `A >= 0` denotes that a matrix `A` is symmetric positive semidefinite; and the nuclear norm is the sum of the singular values. As shown in BCM17, this can be rewritten exactly as
 ```
-minimize		trace( W*S - W*P )
-subject to 		W, P >= 0
-				P diagonal
-				I - W >= 0
-				trace(W) = p - r
+minimize	trace( W*S - W*P )
+subject to 	W, P >= 0
+		P diagonal
+		I - W >= 0
+		trace(W) = p - r
 ```
 where `p` is the number of variables (i.e. `S` is a `p` by `p` matrix) and `I` is the `p` by `p` identity matrix.
 
