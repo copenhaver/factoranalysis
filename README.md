@@ -1,6 +1,6 @@
 ### Background
 
-Factor analyis ("FA") is a classical technique in multivariate statistics enjoying a rich history dating back over 100 years. In its simplest form, FA focuses on decomposing a given covariance matrix `S` into two respective components: `S=T+P`, where `T` is a (low-rank) positive semidefinite ("PSD") matrix (representing the common variances) and `P` is a diagonal matrix with non-negative diagonal entries (representing the individual variances). In reality, this *noiseless* decomposition can often be too restrictive, and so instead it is better to decompose `S` *approximately* as a low-rank matrix `T` plus a diagonal matrix `P`. 
+Factor analysis ("FA") is a classical technique in multivariate statistics enjoying a rich history dating back over 100 years. In its simplest form, FA focuses on decomposing a given covariance matrix `S` into two respective components: `S=T+P`, where `T` is a (low-rank) positive semidefinite ("PSD") matrix (representing the common variances) and `P` is a diagonal matrix with non-negative diagonal entries (representing the individual variances). In reality, this *noiseless* decomposition can often be too restrictive, and so instead it is better to decompose `S` *approximately* as a low-rank matrix `T` plus a diagonal matrix `P`. 
 
 ### Our approach
 
