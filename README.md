@@ -18,6 +18,7 @@ Here the optimization variables are `T` and `P`; the notation `A >= 0` denotes t
 ```
 minimize	trace( W*S - W*P )
 subject to 	W, P >= 0
+		S - P >= 0
 		P diagonal
 		I - W >= 0
 		trace(W) = p - r
