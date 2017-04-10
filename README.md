@@ -38,7 +38,7 @@ The two implementations are as follows:
    This implementation is as described in the paper. In particular, the update with respect to `P`, where `W` is fixed, is solved using the customized ADMM (Section 3.2.2).
 
 
-2. [MATLAB](./MATLAB/)
+2. [MATLAB](./matlab/)
 
    This implementation relies on [`cvx`](https://cvxr.com/cvx/ "CVX") and highlights the simplicity of the alternating minimization approach.
 
