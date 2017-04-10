@@ -4,7 +4,7 @@ Factor analysis ("FA") is a classical technique in multivariate statistics enjoy
 
 ### Our approach
 
-This page contains several sample implementations of an estimation procedure for FA as described in Bertsimas, Copenhaver, and Mazumder, "Certifiably Optimal Low Rank Factor Analysis", Journal of Machine Learning Research 18 (2017) ("BCM17"). The approach is based on conditional gradient methods from convex optimization. We provide several sample implementations of Algorithm 1 (see page 13). Given the well-structured nature of the problems solved in Algorithm 1, there are algorithmic improvements that can be made to the implementations here, but these serve as a good starting point.
+This page contains several sample implementations of an estimation procedure for FA as described in [Bertsimas, Copenhaver, and Mazumder, "Certifiably Optimal Low Rank Factor Analysis", Journal of Machine Learning Research 18 (2017) ("BCM17")](http://jmlr.org/papers/v18/). The approach is based on conditional gradient methods from convex optimization. We provide several sample implementations of Algorithm 1 (see page 13). Given the well-structured nature of the problems solved in Algorithm 1, there are algorithmic improvements that can be made to the implementations here, but these serve as a good starting point.
 
 The problem that we focus on is the case of *q=1* outlined in BCM17. This special case is known as *Approximate Minimum Rank Factor Analysis*, or MRFA, and takes the form
 ```
