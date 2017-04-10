@@ -1,4 +1,4 @@
-# An demo of R implementation of Algorithm 1 from BCM17
+# A demo of R implementation of Algorithm 1 from BCM17
 # (as contained in code.R)
 # Written by Martin S. Copenhaver (www.mit.edu/~mcopen)
 
