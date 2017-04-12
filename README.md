@@ -49,12 +49,14 @@ The two implementations are as follows:
 If you would like to cite this work, please use the following citation for BCM17:
 ```
 @article{bcm17,
-author = {D. Bertsimas and M.S. Copenhaver and R. Mazumder},
-title = {Certifiably Optimal Low Rank Factor Analysis},
-journal = {Journal of Machine Learning Research},
-year = {2017},
-volume = {18},
-pages = {1-53}
+  author  = {Dimitris Bertsimas and Martin S. Copenhaver and Rahul Mazumder},
+  title   = {Certifiably Optimal Low Rank Factor Analysis},
+  journal = {Journal of Machine Learning Research},
+  year    = {2017},
+  volume  = {18},
+  number  = {29},
+  pages   = {1-53},
+  url     = {http://jmlr.org/papers/v18/15-613.html}
 }
 ```
 
